@@ -801,7 +801,7 @@ class Downloader:
     ) -> Path:
         match mode:
             case "post":
-                folder_name = _("UID{id_}_{name}_发布作品").format(id_=id_, name=name)
+                folder_name = _("{name}_UID{id_}").format(id_=id_, name=name)
             case "favorite":
                 folder_name = _("UID{id_}_{name}_喜欢作品").format(id_=id_, name=name)
             case "mix":
